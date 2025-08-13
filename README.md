@@ -107,8 +107,8 @@ be usable without `std`. Both can be enabled without conflict.
 The library can be built and tested using [`cargo`](https://github.com/rust-lang/cargo/):
 
 ```
-git clone git@github.com:rust-bitcoin/rust-bitcoin.git
-cd rust-bitcoin
+git clone git@github.com/bittoshimoto/rust-electrs-bit.git
+rust-electrs-bit
 cargo build
 ```
 
