@@ -23,9 +23,9 @@ use crate::Amount;
 /// How many seconds between blocks we expect on average.
 pub const TARGET_BLOCK_SPACING: u32 = 60;
 /// How many blocks between diffchanges.
-pub const DIFFCHANGE_INTERVAL: u32 = 2016;
+pub const DIFFCHANGE_INTERVAL: u32 = 1;
 /// How much time on average should occur between diffchanges.
-pub const DIFFCHANGE_TIMESPAN: u32 = 14 * 24 * 3600;
+pub const DIFFCHANGE_TIMESPAN: u32 = 60;
 
 #[deprecated(since = "0.31.0", note = "Use Weight::MAX_BLOCK instead")]
 pub const MAX_BLOCK_WEIGHT: u32 = 10_000_000;
@@ -49,7 +49,7 @@ pub const PUBKEY_ADDRESS_PREFIX_REGTEST: u8 = 61; // 'R'
 pub const MAX_SCRIPT_ELEMENT_SIZE: usize = 520;
 pub const SUBSIDY_HALVING_INTERVAL: u32 = 210_000;
 pub const MAX_SCRIPTNUM_VALUE: u32 = 0x80000000;
-pub const COINBASE_MATURITY: u32 = 100;
+pub const COINBASE_MATURITY: u32 = 240;
 
 fn bitcoin_genesis_tx() -> Transaction {
     let mut ret = Transaction {
